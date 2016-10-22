@@ -7,18 +7,18 @@ var expressJwt = require('express-jwt');
 var config = require('config.json');
 var mongoose = require('mongoose');
 var mongodb = require('mongodb');
-var http	= require('http');
+//var http	= require('http');
 
 
 //mongoose connection setup
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mongolab-defined-73042';
+//mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test');
 //end of mongoose setup
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
-app.use(bodyParser.json({limit:'50mb'}));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 app.use(session({ secret: config.secret, resave: false, saveUninitialized: true }));
 
 // use JWT auth to secure the api
@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
-var port = http.createServer(app);
+
 // start server
 var server = app.listen(process.env.PORT || 3000, function () {
     console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
