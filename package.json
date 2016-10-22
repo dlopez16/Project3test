@@ -7,14 +7,12 @@
     "url": "https://github.com/emadkheiralla/bootcampblackjack",
     "scripts": {
       "test": "echo\"Error: no test specified\" && exit 1",
-      "postinstall": "bower install",
       "start": "node server.js"
     }
   },
   "dependencies": {
     "bcryptjs": "^2.1.0",
     "body-parser": "^1.13.2",
-    "bower": "^1.7.9",
     "ejs": "^2.3.3",
     "express": "^4.13.0",
     "express-jwt": "^3.0.1",
@@ -23,7 +21,7 @@
     "jsonwebtoken": "^5.0.2",
     "lodash": "^3.10.0",
     "mongodb": "^2.1.16",
-    "mongoose": "^4.6.3",
+    "mongoose": "^4.6.4",
     "mongoskin": "^2.1.0",
     "q": "^1.4.1",
     "request": "^2.58.0",
