@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
 var config = require('config.json');
 var mongoose = require('mongoose');
-var mongodb = require('mongodb');
+//var mongodb = require('mongodb');
 
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test');
