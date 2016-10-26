@@ -10,11 +10,12 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
     // register using api to maintain clean separation between layers
     request.post({
-        url: config.connectionString + '/users/register',
+        url: config.apiUrl + '/users/register',
         form: req.body,
         json: true
     }, function (error, response, body) {
         if (error) {
+            console.log(error);
             return res.render('register', { error: 'Brah' });
         }
 
