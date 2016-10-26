@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
     // register using api to maintain clean separation between layers
     request.post({
-        url: 'https://127.0.0.1:' + process.env.PORT + '/users/register',
+        url: 'https://dashboard.heroku.com/apps/lit-escarpment-80522' + process.env.PORT + '/users/register',
         form: req.body,
         json: true
     }, function (error, response, body) {
