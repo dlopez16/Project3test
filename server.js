@@ -22,7 +22,7 @@ app.use(session({ secret: config.secret, resave: false, saveUninitialized: true 
 app.use('/api', expressJwt({ secret: config.secret }).unless({ path: ['/api/users/authenticate', '/api/users/register'] }));
 
 // routes
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/login', require('./controllers/login.controller'));
 app.use('/register', require('./controllers/register.controller'));
 app.use('/app', require('./controllers/app.controller'));
