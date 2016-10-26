@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
     // register using api to maintain clean separation between layers
     request.post({
-        url: localhost:3000 || localhost:process.env.PORT + '/users/register',
+        url: localhost:3000 || process.env.PORT + '/users/register',
         form: req.body,
         json: true
     }, function (error, response, body) {
