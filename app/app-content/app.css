@@ -27,8 +27,7 @@ body{
 
 #game {
     background: transparent url('/images/bjbg.png') no-repeat center fixed;
-    background-size: 100% auto;
-    /*background: url('../images/trivia.jpg') no-repeat center fixed;*/
+    /*background-size: 100% auto;*/
     /*background-size: cover;*/
     /*-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,11 +36,11 @@ body{
 
 
     /*background-size: 135vh;*/
-    /*color: #333;
+    color: #333;
     font: 14px/17px Helvetica, Arial, Verdana, sans-serif;
     height: 89vh;
     margin: 10px 25px 0px 25px;
-    position: relative;*/
+    position: relative;
     /*width: 100vw;*/
 }
 /*@media (min-width: 980px){
