@@ -27,12 +27,12 @@ body{
 
 #game {
     background: transparent url('/images/bjbg.png') no-repeat center fixed;
-    /*background-size: 100% auto;*/
+  /*  /*background-size: 100% auto;*/
     /*background-size: cover;*/
-    /*-webkit-background-size: cover;
+  /*  -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover*/;
+    background-size: cover;*/
 
 
     background-size: 135vh;
